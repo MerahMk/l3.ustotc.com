@@ -739,10 +739,23 @@ footer {
     justify-content: space-between;
     margin-right: 10px;
 }
+.plugin-video iframe{
+        width: 360px;
+        height: 250px;
+    }
 .plugin-video > *{
     margin-bottom: 15px
 }
 .video-title{
     font-size: 18px;
     font-weight: 600;
+}
+
+@media only screen and (max-width:768px) {
+
+    .plugin-video iframe{
+        width: 80vw;
+        height: 250px;
+    }
+    
 }
