@@ -719,3 +719,30 @@ footer {
     }
 
 }
+
+
+
+
+.fa-youtube{
+    color: red;
+}
+.youtube-plugins{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.plugin-video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.plugin-video > *{
+    margin-bottom: 15px
+}
+.video-title{
+    font-size: 18px;
+    font-weight: 600;
+}
