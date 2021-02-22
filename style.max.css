@@ -50,16 +50,23 @@ input:focus {
 }
 /* Background of header */
 
+header{
+    background: url(img/banner-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 130px 100px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6em), 8em 100%, 0 100%);
+}
 .background {
     width: 100%;
     height: 95vh;
-    background: linear-gradient(45deg, rgb(32 150 228), rgb(0 170 208), #38a6c7, #017ddc, #3352ec, #8c3bf7, #ba2bf5);
+    color: aliceblue;
+    background: linear-gradient(45deg, #2096e4f1, #00aad0e1, #38a6c790, #017ddc90, #3352ec90, #8c3bf790, #ba2bf590);
     background-position: 85%;
     background-repeat: no-repeat;
     position: relative;
     border-bottom-left-radius: 130px 100px;
-    color: aliceblue;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6em), 8em 100%, 0 100%);
     background-size: 600%;
     animation: move-a 15s cubic-bezier(0.77, 0.4, 0.15, 0.64) infinite;
     display: flex;
@@ -81,105 +88,8 @@ input:focus {
     }
 }
 
-.boxes {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-.boxes li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    bottom: -50px;
-    background: rgba(255, 255, 255, 0.5);
-    animation: ani-car 10s linear infinite;
-    border-radius: 10px;
-    filter: blur(6px);
-}
-
-.boxes li:nth-child(1) {
-    left: 86%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-.boxes li:nth-child(2) {
-    left: 12%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 1.5s;
-    animation-duration: 10s;
-}
-
-.boxes li:nth-child(3) {
-    left: 50%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 5.5s;
-}
-
-.boxes li:nth-child(4) {
-    left: 35%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 0s;
-    animation-duration: 15s;
-}
-
-.boxes li:nth-child(5) {
-    left: 76%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 0s;
-}
-
-.boxes li:nth-child(6) {
-    left: 26%;
-    width: 35px;
-    height: 35px;
-    animation-delay: 3.5s;
-    animation-duration: 12s;
-}
-
-.boxes li:nth-child(7) {
-    left: 45%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 3s;
-    animation-duration: 8s;
-}
-
-.boxes li:nth-child(8) {
-    left: 78%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 5s;
-}
-
-.boxes li:nth-child(9) {
-    left: 15%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 5s;
-}
-
-@keyframes ani-car {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-800px) rotate(360deg);
-        opacity: 0;
-    }
-}
+#particles-js{ position:absolute; width: 100%; height: 100%; background-color: ; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 
 
@@ -358,7 +268,7 @@ input:focus {
 }
 
 .intro p {
-    margin: 0px auto;
+    margin: 0px auto 20px auto;
     width: 100%;
     text-align: justify;
     -webkit-text-justify: inter-character;
@@ -610,11 +520,14 @@ footer {
 
 
 @media only screen and (max-width:768px) {
-
+    header{
+    background-size: cover;
+    border-bottom-left-radius: 0px 0px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2em), 0em 100%, 0 100%);
+    }
     .background {
         height: 90vh;
-        border-bottom-left-radius: 0px 0px;
-        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2em), 0em 100%, 0 100%);
+        border-bottom-left-radius: 0;
     }
 
     .boxcaption h1 {
